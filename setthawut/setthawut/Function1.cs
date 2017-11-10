@@ -23,7 +23,7 @@ namespace setthawut
             // Get request body
             dynamic data = await req.Content.ReadAsAsync<object>();
 
-            // Set name to query string or body data
+            // Set name to query string or body data Test
             name = name ?? data?.name;
 
             return name == null
