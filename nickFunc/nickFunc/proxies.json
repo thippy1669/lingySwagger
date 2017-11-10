@@ -1,0 +1,18 @@
+﻿{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+    "proxies1": {
+      "matchCondition": {
+        "route": "proxiesVS/{name}",
+        "methods": [
+          "GET"
+        ]
+      },
+      "backendUri": "https://functionapp20171109041445.azurewebsites.net/api/testFunc?code=5UmP9Wsrze1Z7nvYaMmBhmKZ/pDvbajDjpuES0gMeTYuU0ipPmkyDQ==",
+      "requestOverrides": {
+        "backend.request.method": "get",
+        "backend.request.querystring.name": "{name}"
+      }
+    }
+  }
+}
