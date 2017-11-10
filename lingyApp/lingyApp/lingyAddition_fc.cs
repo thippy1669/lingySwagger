@@ -28,7 +28,7 @@ namespace lingyApp
             int b = int.Parse(paramB);
             int sum = a + b;
             string result = sum.ToString();
-            string hallo = "hiiiiii";
+            string hallo = "hiiiiiijaaaaaa";
 
             // Get request body
             dynamic reqDataA = await req.Content.ReadAsAsync<object>();
