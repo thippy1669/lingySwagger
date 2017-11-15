@@ -18,8 +18,16 @@
 						url+='&B=';
 						url+=submission.data.b;
 						$.ajax({
-							url: url,
-							beforeSend: function(xhrObj) {
+
+                            url: url,
+                            dataType: 'jsonp',
+                            crossDomain: true,
+                            //contentType: "text/html",
+                            beforeSend: function (xhrObj) {
+                                // beforeSenddata
+
+                           // url: url,
+						   // beforeSend: function(xhrObj) {
 								// beforeSend
 							},
 							type: "GET"
