@@ -1,11 +1,47 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://unpkg.com/formiojs@latest/dist/formio.full.min.css'>
+	<script src='https://unpkg.com/formiojs@latest/dist/formio.full.min.js'></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type='text/javascript'>
+		window.onload = function() {
+
+			var calForm = new Formio('https://gyaikxjdusvwokf.form.io/sum')
+			calForm.loadForm().then(function(form) {
+				Formio.createForm(document.getElementById('formio'), form).then(function(instance) {
+					instance.on('submit', function(submission) {
+						//var url = 'https://addapi.azure-api.net/API2LOGIC/add';
+						var url = 'https://lingyfunction.azurewebsites.net/api/Togetherteam';
+						url+='?A=';
+						url+=submission.data.a;
+						url+='&B=';
+						url+=submission.data.b;
+						$.ajax({
+							url: url,
+							beforeSend: function(xhrObj) {
+								// beforeSend
+							},
+							type: "GET"
+						}).done(function(data) {
+							//submission.data.sum=data.result;
+							$('[name=data\\[sum\\]]').val(data.result);
+							console.log(data);
+						}).fail(function(err) {
+							console.log(err)
+						});
+					});
+				});
+			});
+
+		};
+	</script>
 </head>
 <body>
-    test file jaaaaaaaaaaa
+<div class="container bg-faded">
+   <div class="row">
+        <div class="col-12" id="formio"></div>
+    </div>
+ </div>
 </body>
 </html>
