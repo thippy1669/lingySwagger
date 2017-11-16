@@ -19,15 +19,15 @@
 						url+=submission.data.b;
 						$.ajax({
 
-                            url: url,
-                            dataType: 'jsonp',
-                            crossDomain: true,
+                            //url: url,
+                            //dataType: 'jsonp',
+                            //crossDomain: true,
                             //contentType: "text/html",
-                            beforeSend: function (xhrObj) {
+                            //beforeSend: function (xhrObj) {
                                 // beforeSenddata
 
-                           // url: url,
-						   // beforeSend: function(xhrObj) {
+                            url: url,
+						    beforeSend: function(xhrObj) {
 								// beforeSend
 							},
 							type: "POST"
