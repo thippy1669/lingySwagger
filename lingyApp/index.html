@@ -12,10 +12,10 @@
 				Formio.createForm(document.getElementById('formio'), form).then(function(instance) {
 					instance.on('submit', function(submission) {
 						//var url = 'https://addapi.azure-api.net/API2LOGIC/add';
-						var url = 'https://lingyfunction.azurewebsites.net/api/Togetherteam';
-						url+='?A=';
+                        var url = 'https://lingyfunction.azurewebsites.net/api/Togetherteam';
+						url+='/';
 						url+=submission.data.a;
-						url+='&B=';
+						url+='/';
 						url+=submission.data.b;
 						$.ajax({
 
