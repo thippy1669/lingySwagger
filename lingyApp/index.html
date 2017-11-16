@@ -37,7 +37,8 @@
 						}).done(function(data) {
 							//submission.data.sum=data.result;
 							$('[name=data\\[sum\\]]').val(data.result);
-							console.log(data);
+                            //console.log(data);
+                            JSON.parse(data);
 						}).fail(function(err) {
 							console.log(err)
 						});
