@@ -29,7 +29,6 @@
                                 // beforeSenddata
 
                             url: url,
-                            dataType: "json",
 						    beforeSend: function(xhrObj) {
 								// beforeSend
 							},
@@ -37,8 +36,7 @@
 						}).done(function(data) {
 							//submission.data.sum=data.result;
 							$('[name=data\\[sum\\]]').val(data.result);
-                            //console.log(data);
-                            JSON.parse(data);
+							console.log(data);
 						}).fail(function(err) {
 							console.log(err)
 						});
