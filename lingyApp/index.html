@@ -13,9 +13,11 @@
 					instance.on('submit', function(submission) {
 						//var url = 'https://addapi.azure-api.net/API2LOGIC/add';
                         var url = 'https://lingyfunction.azurewebsites.net/api/Togetherteam';
-						url+='/';
-						url+=submission.data.a;
-						url+='/';
+                        url += '?a=';
+                        //url += '/';    // GET method
+						url += submission.data.a;
+						url += '&b=';    // GET method
+                        //url += '/';
 						url+=submission.data.b;
 						$.ajax({
 
