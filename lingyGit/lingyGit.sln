@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lingyGit", "lingyGit\lingyGit.csproj", "{96CCB258-A92D-4D11-B0F2-32D5E6590745}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lingyGit", "lingyGit\lingyGit.csproj", "{90397DE2-EB07-43D4-AC49-4B5001BAC1DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{96CCB258-A92D-4D11-B0F2-32D5E6590745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96CCB258-A92D-4D11-B0F2-32D5E6590745}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96CCB258-A92D-4D11-B0F2-32D5E6590745}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96CCB258-A92D-4D11-B0F2-32D5E6590745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90397DE2-EB07-43D4-AC49-4B5001BAC1DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90397DE2-EB07-43D4-AC49-4B5001BAC1DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90397DE2-EB07-43D4-AC49-4B5001BAC1DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90397DE2-EB07-43D4-AC49-4B5001BAC1DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AFCB8A17-F2CC-42A6-BAA4-DFA9C53BD226}
+		SolutionGuid = {BA560B26-042C-438D-8C04-CEEDC6DACA2E}
 	EndGlobalSection
 EndGlobal
