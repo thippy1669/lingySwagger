@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "funcfordeployvsts.azurewebsites.net",
-    "version": "1.0.20"
+    "version": "1.0.201"
   },
   "host": "funcfordeployvsts.azurewebsites.net",
   "basePath": "/",
