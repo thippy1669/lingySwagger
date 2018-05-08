@@ -1,0 +1,144 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "title": "funcfordeployvsts.azurewebsites.net",
+    "version": "1.0.201"
+  },
+  "host": "funcfordeployvsts.azurewebsites.net",
+  "basePath": "/",
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/api/funcVSTS": {
+      "get": {
+        "operationId": "/api/funcVSTS/get",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "post": {
+        "operationId": "/api/funcVSTS/post",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "/api/funcVSTS/delete",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "head": {
+        "operationId": "/api/funcVSTS/head",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "/api/funcVSTS/patch",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "put": {
+        "operationId": "/api/funcVSTS/put",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      },
+      "options": {
+        "operationId": "/api/funcVSTS/options",
+        "produces": [],
+        "consumes": [],
+        "parameters": [],
+        "description": "Replace with Operation Object #http://swagger.io/specification/#operationObject",
+        "responses": {
+          "200": {
+            "description": "Success operation"
+          }
+        },
+        "security": [
+          {
+            "apikeyQuery": []
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "securityDefinitions": {
+    "apikeyQuery": {
+      "type": "apiKey",
+      "name": "code",
+      "in": "query"
+    }
+  }
+}
