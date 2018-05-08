@@ -1,0 +1,57 @@
+<html>
+<head>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://unpkg.com/formiojs@latest/dist/formio.full.min.css'>
+	<script src='https://unpkg.com/formiojs@latest/dist/formio.full.min.js'></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type='text/javascript'>
+		window.onload = function() {
+
+			var calForm = new Formio('https://gyaikxjdusvwokf.form.io/sum')
+			calForm.loadForm().then(function(form) {
+				Formio.createForm(document.getElementById('formio'), form).then(function(instance) {
+					instance.on('submit', function(submission) {
+						//var url = 'https://addapi.azure-api.net/API2LOGIC/add';
+                        var url = 'https://lingyfunction.azurewebsites.net/api/Togetherteam';
+                        url += '?a=';
+                        //url += '/';    // GET method
+						url += submission.data.a;
+						url += '&b=';    // GET method
+                        //url += '/';
+						url+=submission.data.b;
+						$.ajax({
+
+                            //url: url,
+                            //dataType: 'jsonp',
+                            //crossDomain: true,
+                            //contentType: "text/html",
+                            //beforeSend: function (xhrObj) {
+                                // beforeSenddata
+
+                            url: url,
+						    beforeSend: function(xhrObj) {
+								// beforeSend
+							},
+							type: "POST"
+						}).done(function(data) {
+							//submission.data.sum=data.result;
+							$('[name=data\\[sum\\]]').val(data.result);
+							console.log(data);
+						}).fail(function(err) {
+							console.log(err)
+						});
+					});
+				});
+			});
+
+		};
+	</script>
+</head>
+<body>
+<div class="container bg-faded">
+   <div class="row">
+        <div class="col-12" id="formio"></div>
+    </div>
+ </div>
+</body>
+</html>
